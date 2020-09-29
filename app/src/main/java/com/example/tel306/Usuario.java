@@ -1,6 +1,8 @@
 package com.example.tel306;
 
-public class Usuario extends Especialidad{
+import java.io.Serializable;
+
+public class Usuario extends Especialidad implements Serializable {
     private String nombre;
     private String apellidos;
     private Especialidad especialidad;
