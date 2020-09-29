@@ -11,6 +11,13 @@
         android:theme="@style/AppTheme">
         <activity android:name=".TareasPendientes"
             android:configChanges="uiMode">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
         <activity android:name=".AgregarUsuario"></activity>
         <activity android:name=".AgregarNuevaTarea"></activity>
