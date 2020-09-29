@@ -26,7 +26,7 @@ public class TareasPendientes extends AppCompatActivity {
 
         ImageView imagenMascota = findViewById(R.id.mascota);
 
-        if(nombreEspecialidad == "Telecom"){
+        if(nombreEspecialidad == "Telecomunicaciones"){
             imagenMascota.setImageResource(R.drawable.ic_telito);
 
         }else if (nombreEspecialidad == "Electronica") {
