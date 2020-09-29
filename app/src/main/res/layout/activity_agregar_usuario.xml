@@ -82,9 +82,10 @@
         android:id="@+id/radioGroup"
         android:layout_width="173dp"
         android:layout_height="148dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonAgregar"
         app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/textView">
 
         <RadioButton
@@ -105,9 +106,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
         android:text="TextView"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="544dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAgregar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonAgregar"
+        app:layout_constraintVertical_bias="0.289" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
