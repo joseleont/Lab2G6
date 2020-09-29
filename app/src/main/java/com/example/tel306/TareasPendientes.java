@@ -29,8 +29,12 @@ public class TareasPendientes extends AppCompatActivity {
 
         ImageView imagenMascota = findViewById(R.id.mascota);
 
+<<<<<<< HEAD
         // PONER IMAGEN DE LA CARRERA
         if(nombreEspecialidad == "Telecom"){
+=======
+        if(nombreEspecialidad == "Telecomunicaciones"){
+>>>>>>> 7d57b0ae27ead8032064b31b7112438a22ecad9f
             imagenMascota.setImageResource(R.drawable.ic_telito);
 
         }else if (nombreEspecialidad == "Electronica") {
