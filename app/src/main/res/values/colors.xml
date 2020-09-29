@@ -3,4 +3,15 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorTeleco">#2196F3</color>
+    <color name="colorTelecoOscuro">#11548A</color>
+    <color name="colorAccentTeleco">#03DAC5</color>
+    <color name="colorElectronica">#F32121</color>
+    <color name="colorElectronicaOscuro">#681010</color>
+    <color name="colorAccentElect">#F47F31</color>
+    <color name="colorMecatronica">#9C27B0</color>
+    <color name="colorMecatronicaOscuro">#600E6E</color>
+    <color name="colorAccentMecatro">#D28DDD</color>
+
 </resources>

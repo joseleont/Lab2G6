@@ -9,4 +9,24 @@
 
     <style name="TemaOscuro" parent="Theme.MaterialComponents.DayNight"></style>
 
+    <style name="TemaTeleco" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorTeleco</item>
+        <item name="colorPrimaryDark">@color/colorTelecoOscuro</item>
+        <item name="colorAccent">@color/colorAccentTeleco</item>
+    </style>
+
+    <style name="TemaElectronica" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorElectronica</item>
+        <item name="colorPrimaryDark">@color/colorElectronicaOscuro</item>
+        <item name="colorAccent">@color/colorAccentElect</item>
+    </style>
+
+    <style name="TemaMecatronico" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMecatronica</item>
+        <item name="colorPrimaryDark">@color/colorMecatronicaOscuro</item>
+        <item name="colorAccent">@color/colorAccentMecatro</item>
+    </style>
 </resources>

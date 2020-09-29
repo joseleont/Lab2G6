@@ -31,20 +31,19 @@ public class TareasPendientes extends AppCompatActivity {
 
 
         // PONER IMAGEN DE LA CARRERA
-        if(nombreEspecialidad == "Telecom"){
         if(nombreEspecialidad == "Telecomunicaciones"){
 
             imagenMascota.setImageResource(R.drawable.ic_telito);
+            setTheme(R.style.TemaTeleco);
 
         }else if (nombreEspecialidad == "Electronica") {
             imagenMascota.setImageResource(R.drawable.erectrito);
+            setTheme(R.style.TemaElectronica);
         }else if (nombreEspecialidad == "Mecatronica")  {
             imagenMascota.setImageResource(R.drawable.bender);
+            setTheme(R.style.TemaMecatronico);
         }
 
-
-
-    }
 
         //ENVIAR AL ACTIVITY AgregarNuevaTarea
         findViewById(R.id.buttonAgregar).setOnClickListener( new View.OnClickListener() {
