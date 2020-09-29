@@ -23,10 +23,11 @@ public class AgregarUsuario extends AppCompatActivity {
         Usuario usuarionuevo = (Usuario) intent.getSerializableExtra("usuario");
         Especialidad especialidad1 = usuarionuevo.getEspecialidad();
 
+
     }
 
 
-    public Usuario crearUsuario(View vista) {
+    public void crearUsuario(View vista) {
         Intent intent = getIntent();
         Usuario usuario1 = (Usuario) intent.getSerializableExtra("usuario");
         Especialidad especialidad1 = usuario1.getEspecialidad();
@@ -83,6 +84,8 @@ public class AgregarUsuario extends AppCompatActivity {
         usuario1.setDni(String.valueOf(nuevoDni));
         usuario1.setEspecialidad(especialidad1);
         usuario1.setCodigo(String.valueOf(nuevoCodigo));
-        return usuario1;
+        intent.putExtra("usuario",usuario1);
+        setResult(RESULT_OK,intent);
+
     }
 }
