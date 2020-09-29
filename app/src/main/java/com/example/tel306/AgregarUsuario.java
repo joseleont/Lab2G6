@@ -23,9 +23,8 @@ public class AgregarUsuario extends AppCompatActivity {
         Usuario usuarionuevo = (Usuario) intent.getSerializableExtra("usuario");
         Especialidad especialidad1 = usuarionuevo.getEspecialidad();
 
-
-
     }
+
 
     public Usuario crearUsuario(View vista) {
         Intent intent = getIntent();
@@ -40,6 +39,9 @@ public class AgregarUsuario extends AppCompatActivity {
 
         EditText dni = findViewById(R.id.dni);
         int nuevoDni = Integer.parseInt(dni.getText().toString());
+
+        EditText codigo = findViewById(R.id.codigo);
+        int nuevoCodigo = Integer.parseInt(dni.getText().toString());
 
         EditText contrasenia = findViewById(R.id.contrasenia);
         String nuevoContrasenia = contrasenia.getText().toString();
@@ -62,8 +64,12 @@ public class AgregarUsuario extends AppCompatActivity {
             apellido.setError("Debe ingresar el apellido");
         }
         if (String.valueOf(nuevoDni).isEmpty() | String.valueOf(nuevoDni).length() < 9) {
-            dni.setError("Debe el DNI correctamente");
+            dni.setError("Debe ingresar el DNI correctamente");
         }
+        if (String.valueOf(nuevoCodigo).isEmpty() | String.valueOf(nuevoCodigo).length() < 20120000 | String.valueOf(nuevoCodigo).length() > 20170000) {
+            dni.setError("Debe ingresar el codigo correctamente");
+        }
+
         if (nuevoContrasenia.isEmpty()) {
             contrasenia.setError("Debe el DNI correctamente");
         }
@@ -76,6 +82,7 @@ public class AgregarUsuario extends AppCompatActivity {
         usuario1.setClaseSecreta(nuevoContrasenia);
         usuario1.setDni(String.valueOf(nuevoDni));
         usuario1.setEspecialidad(especialidad1);
+        usuario1.setCodigo(String.valueOf(nuevoCodigo));
         return usuario1;
     }
 }

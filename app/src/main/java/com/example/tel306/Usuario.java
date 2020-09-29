@@ -7,6 +7,16 @@ public class Usuario extends Especialidad implements Serializable {
     private String apellidos;
     private Especialidad especialidad;
     private String dni;
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    private String codigo;
     private String claseSecreta;
 
     public String getNombre() {
