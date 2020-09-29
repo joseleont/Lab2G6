@@ -4,4 +4,5 @@
     <string name="agregar_nueva_actividad">Agregar nueva actividad</string>
     <string name="bienvenida">¡Bienvenido!</string>
     <string name="agregar_to_do_list">AGREGAR TO DO LIST</string>
+    <string name="buttonRegresar">REGISTRAR SESION NUEVAMENTE</string>
 </resources>
