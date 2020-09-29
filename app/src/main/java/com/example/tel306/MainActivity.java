@@ -1,4 +1,4 @@
-package com.example.lab2g;
+package com.example.tel306;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

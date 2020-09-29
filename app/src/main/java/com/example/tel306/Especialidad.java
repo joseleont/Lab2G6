@@ -1,4 +1,4 @@
-package com.example.lab2g;
+package com.example.tel306;
 
 public class Especialidad{
     public String nombre;
