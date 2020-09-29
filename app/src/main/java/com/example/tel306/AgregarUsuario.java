@@ -66,7 +66,7 @@ public class AgregarUsuario extends AppCompatActivity {
         if (String.valueOf(nuevoDni).isEmpty() | String.valueOf(nuevoDni).length() < 9) {
             dni.setError("Debe ingresar el DNI correctamente");
         }
-        if (String.valueOf(nuevoCodigo).isEmpty() | String.valueOf(nuevoCodigo).length() < 20120000 | String.valueOf(nuevoCodigo).length() > 20170000) {
+        if (String.valueOf(nuevoCodigo).isEmpty() | String.valueOf(nuevoCodigo).length() > 9 | String.valueOf(nuevoCodigo).length() < 7| nuevoCodigo <20120000 | nuevoCodigo > 20170000) {
             dni.setError("Debe ingresar el codigo correctamente");
         }
 
