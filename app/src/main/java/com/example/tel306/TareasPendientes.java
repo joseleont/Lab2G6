@@ -29,7 +29,11 @@ public class TareasPendientes extends AppCompatActivity {
 
         ImageView imagenMascota = findViewById(R.id.mascota);
 
+
+        // PONER IMAGEN DE LA CARRERA
+        if(nombreEspecialidad == "Telecom"){
         if(nombreEspecialidad == "Telecomunicaciones"){
+
             imagenMascota.setImageResource(R.drawable.ic_telito);
 
         }else if (nombreEspecialidad == "Electronica") {
@@ -38,7 +42,11 @@ public class TareasPendientes extends AppCompatActivity {
             imagenMascota.setImageResource(R.drawable.bender);
         }
 
-// agregar
+
+
+    }
+
+        //ENVIAR AL ACTIVITY AgregarNuevaTarea
         findViewById(R.id.buttonAgregar).setOnClickListener( new View.OnClickListener() {
 
             @Override
@@ -50,19 +58,25 @@ public class TareasPendientes extends AppCompatActivity {
                 startActivityForResult(intent,requestCode);
 
 
-
-
             }
         });
 
-    }
 
+
+
+
+}
+
+
+
+    // Regresar al registro
     public void regresar (View view){
 
         Intent intent = new Intent(TareasPendientes.this, AgregarUsuario.class);
         startActivity(intent);
     }
 
+    // Cambiar a modo oscuro
     public void cambioSecreto (View view){
 
         TextView textViewContador = findViewById(R.id.textView4);
@@ -73,16 +87,14 @@ public class TareasPendientes extends AppCompatActivity {
 
         if(contador==5)
         {
-            //first time clicked to do this
+
             Toast.makeText(TareasPendientes.this,"Has desbloqueado la opcion oscura", Toast.LENGTH_SHORT).show();
             getApplication().setTheme(R.style.TemaOscuro);
         }
     }
 
 
-
-
-//extras
+    //LISTA DE CHECKBOXES
 
     CheckBox c1=findViewById(R.id.check1);
     CheckBox c2=findViewById(R.id.check2);
@@ -94,6 +106,7 @@ public class TareasPendientes extends AppCompatActivity {
     CheckBox c8=findViewById(R.id.check8);
     CheckBox[] listaChecks= {c1,c2,c3,c4,c5,c6,c7,c8};
 
+    // DESPARECER LOS CHECKBOXES
     public void desaparecerCheckbox(View view){
 
         CheckBox check= (CheckBox) view;
@@ -106,6 +119,7 @@ public class TareasPendientes extends AppCompatActivity {
 
     }
 
+    //RECIBIR LA INFORMACION DE LA ACTIVITY AgregarNUevaTarea para agregar un checkbox
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -135,7 +149,5 @@ public class TareasPendientes extends AppCompatActivity {
 
 
     }
-
-
 
 }
