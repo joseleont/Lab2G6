@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lab2G</string>
+    <string name="agregar_actividad">Agregar Actividad</string>
+    <string name="agregar_nueva_actividad">Agregar nueva actividad</string>
 </resources>
