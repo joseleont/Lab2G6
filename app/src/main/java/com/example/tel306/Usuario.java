@@ -7,7 +7,6 @@ public class Usuario extends Especialidad{
     private String dni;
     private String claseSecreta;
 
-
     public String getNombre() {
         return nombre;
     }

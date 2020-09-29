@@ -1,4 +1,4 @@
-package com.example.lab2g;
+package com.example.tel306;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

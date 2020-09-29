@@ -3,7 +3,6 @@ package com.example.lab2g;
 public class Especialidad{
     public String nombre;
 
-
     public String getNombre() {
         return nombre;
     }
