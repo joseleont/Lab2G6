@@ -1,9 +1,8 @@
 package com.example.tel306;
 
 import android.content.Intent;
-//import android.support.v7.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;
 
 public class TareasPendientes extends AppCompatActivity {
@@ -30,6 +29,8 @@ public class TareasPendientes extends AppCompatActivity {
                 imagenMascota.setImageResource(R.drawable.erectrito);
             }
         }
+
+        //estamos probando el commit
 
 
     }
