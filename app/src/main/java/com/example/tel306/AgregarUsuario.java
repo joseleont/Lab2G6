@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity2 extends AppCompatActivity {
+public class AgregarUsuario extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,7 +13,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         setTitle("Agregar usuario");
 
-        public void obtenerDatos(View view){
-        }
+        //public void obtenerDatos(View view){
+       // }
     }
 }
